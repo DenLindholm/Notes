@@ -1,0 +1,20 @@
+def generate_cosmic_sequence(length):
+    """
+    Generate a cosmic sequence of characters representing celestial bodies.
+    
+    Args:
+    - length (int): Length of the cosmic sequence to generate.
+    
+    Returns:
+    - cosmic_sequence (str): Sequence representing celestial bodies.
+    """
+    import random
+    
+    cosmic_symbols = ['☀️', '☄️', '⭐', '🌙', '🌠', '🪐', '🌌']
+    cosmic_sequence = ''.join(random.choice(cosmic_symbols) for _ in range(length))
+    return cosmic_sequence
+
+if __name__ == "__main__":
+    sequence_length = 50
+    cosmic_result = generate_cosmic_sequence(sequence_length)
+    print(cosmic_result)
